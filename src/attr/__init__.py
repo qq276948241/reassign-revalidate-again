@@ -28,6 +28,7 @@ from ._make import (
     validate,
 )
 from ._next_gen import define, field, frozen, mutable
+from ._roundtrip import RoundtripError, dumpb, dumps, loadb, loads
 from ._version_info import VersionInfo
 
 
@@ -59,6 +60,8 @@ __all__ = [
     "cmp_using",
     "converters",
     "define",
+    "dumpb",
+    "dumps",
     "evolve",
     "exceptions",
     "field",
@@ -69,9 +72,12 @@ __all__ = [
     "get_run_validators",
     "has",
     "ib",
+    "loadb",
+    "loads",
     "make_class",
     "mutable",
     "resolve_types",
+    "RoundtripError",
     "s",
     "set_run_validators",
     "setters",
